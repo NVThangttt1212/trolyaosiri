@@ -66,7 +66,7 @@ while True: # để cho code luôn đúng và chạy tới khi có lệnh dừng
         speak(botSiri)
     elif text: 
         wikipedia.set_lang("vi")
-        wikipedia.summary(text, sentences=1) # phần text là thông tin tìm kiếm /sentences để đọc dòng đầu trong kết quả tìm kiếm 
+        botSiri = wikipedia.summary(text, sentences=1) # phần text là thông tin tìm kiếm /sentences để đọc dòng đầu trong kết quả tìm kiếm 
         print(botSiri)
         speak(botSiri)
     elif "tạm biệt" in text:
